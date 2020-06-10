@@ -35,8 +35,7 @@ def user_login(request):
             print("They used username: {} and password: {}".format(username,password))
             return HttpResponse("Invalid login details given")
     else:
-        form = LoginForm()
-        return render(request, 'registration/login.html', {'form': form})
+        return render(request, 'registration/login.html', {})
 
 
 
